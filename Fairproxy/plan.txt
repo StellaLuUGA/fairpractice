@@ -1,0 +1,21 @@
+Metrics
+NDCG@10, Recall@10 - Standard recommendation accuracy
+CFR - Direct counterfactual fairness comparison with FACTER
+
+
+Primary contribution:
+Vector Distance Ratio - ||v_0-v_1||_2 / ||v_0-v_2||_2
+Proxy-Specific Leakage Scores - Per-proxy analysis
+Weighted Aggregate Leakage - If considering multiple proxies
+
+
+Order:
+config.py
+data.py
+llm_predictor.py
+vector_extractor.py
+proxy.py
+metrics.py
+evaluation.py
+main.py
+utils.py (optional)

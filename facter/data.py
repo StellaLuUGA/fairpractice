@@ -1,6 +1,7 @@
 """
 data.py: Dataset loading, preprocessing, and prompt construction for FACTER.
 """
+from io import BytesIO
 import numpy as np
 import pandas as pd
 from pathlib import Path
@@ -29,10 +30,7 @@ class DatasetLoader:
     def _load_dataset(self):
         if self.dataset_name == 'ml-1m':
             self._load_movielens()
-        elif self.dataset_name == 'amazon':
-            self._load_amazon()
-        else:
-            raise ValueError(f"Unknown dataset: {self.dataset_name}")
+       
 
     def _load_movielens(self):
         try:
@@ -70,64 +68,12 @@ class DatasetLoader:
                 logger.error(f"MovieLens download failed: {str(e)}")
                 raise
 
-    def _load_amazon(self):
-        try:
-            self._download_amazon()
-            file_path = Config.EXTRACT_DIR / 'Movies_and_TV_5.json.gz'
-            records = []
-            with gzip.open(file_path, 'rt', encoding='utf-8') as f:
-                for line in tqdm(f, desc="Loading Amazon data"):
-                    records.append(json.loads(line))
-            self.data = pd.DataFrame(records)
-            self._preprocess_amazon()
-        except Exception as e:
-            logger.error(f"Amazon dataset loading failed: {str(e)}")
-            raise
+   
 
-    def _download_amazon(self):
-        file_path = Config.EXTRACT_DIR / 'Movies_and_TV_5.json.gz'
-        if not file_path.exists():
-            try:
-                logger.info("Downloading Amazon dataset...")
-                response = requests.get(
-                    Config.DATASETS['amazon']['url'], 
-                    stream=True, 
-                    verify=False   
-                )
-                response.raise_for_status()
-                with open(file_path, 'wb') as f:
-                    for chunk in tqdm(response.iter_content(chunk_size=8192), 
-                                    desc="Downloading", unit="KB",
-                                    total=int(response.headers.get('content-length', 0))/8192):
-                        f.write(chunk)
-                logger.info("Extracting dataset...")
-                with gzip.open(file_path, 'rb') as f_in:
-                    with open(Config.EXTRACT_DIR / 'Movies_and_TV_5.json', 'wb') as f_out:
-                        shutil.copyfileobj(f_in, f_out)
-            except Exception as e:
-                logger.error(f"Amazon download failed: {str(e)}")
-                raise
+    
 
-    def _preprocess_amazon(self):
-        self.data = self.data[self.data['overall'] >= 4]
-        self.data = self.data.rename(columns={
-            'reviewerID': 'uid',
-            'asin': 'mid',
-            'reviewText': 'text',
-            'overall': 'rating'
-        })
-        np.random.seed(42)
-        self.data['gender'] = np.random.choice(['M','F'], size=len(self.data))
-        self.data['age'] = np.random.randint(18, 65, size=len(self.data))
-        self.data['occupation'] = np.random.choice(20, size=len(self.data))
-        self.data['timestamp'] = self.data['unixReviewTime']
-        self.data.rename(columns={'summary': 'title'}, inplace=True)
-        self.item_db = (
-            self.data
-            .drop_duplicates('mid')
-            .set_index('mid')[['title']]
-            .to_dict(orient='index')
-        )
+   
+        
 
     def prepare_prompts(self):
         try:
@@ -165,16 +111,4 @@ class DatasetLoader:
             logger.warning(f"Missing movie ID in database: {str(e)}")
             return None
 
-    def _create_amazon_prompt(self, sequence):
-        try:
-            history = [self.item_db[mid]['title'] for mid in sequence[:-1]]
-            candidates = [self.item_db[mid]['title'] for mid in sequence[-3:]]
-            return (
-                "Product interaction history:\n" +
-                '\n'.join([f"{i+1}. {m}" for i, m in enumerate(history)]) +
-                "\n\nRecommend next product from these options:\n" +
-                '\n'.join([f"{i+1}. {m}" for i, m in enumerate(candidates)])
-            )
-        except KeyError as e:
-            logger.warning(f"Missing product ID in database: {str(e)}")
-            return None
+   

@@ -16,7 +16,7 @@ def main():
     logger.info("Starting FACTER pipeline...")
     embedder, tokenizer, model = load_models()
     results = {}
-    for dataset_name in ['amazon', 'ml-1m']:
+    for dataset_name in ['ml-1m']:
         logger.info(f"\n=== Running Experiment on {dataset_name.upper()} ===")
         loader = DatasetLoader(dataset_name)
         full_data = loader.prepare_prompts().dropna()
