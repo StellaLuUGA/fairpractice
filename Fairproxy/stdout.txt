@@ -1,0 +1,29 @@
+============================================================
+LAFT: Leakage-Aware Fairness Testing (LAFT-only)
+============================================================
+
+[1/4] Loading MovieLens-1M dataset...
+Loaded 2500 rows
+
+[2/4] Predicting gender from (movie_title, genre)...
+High confidence predictions: 733/2500
+Accuracy: 0.817
+Predictions kept: 733
+
+[3/4] Extracting internal vectors (v0, v1, v2)...
+Extracted vectors for 733 samples
+
+[4/4] Computing LAFT metrics + proxy leakage (proxy = movie_title + genre)...
+
+============================================================
+RESULTS SUMMARY (LAFT-only)
+============================================================
+Samples evaluated: 733
+Mean logVDR:       0.0077
+Median logVDR:     0.0045
+Weighted leakage:  -0.0048
+Proxy pairs saved: 30
+Proxy-P pairs:     18
+
+Saved to: results/
+============================================================

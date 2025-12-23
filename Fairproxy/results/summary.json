@@ -1,0 +1,14 @@
+{
+  "model_name": "meta-llama/Meta-Llama-3.1-8B",
+  "layer_idx": -2,
+  "device": "cuda",
+  "confidence_threshold": 0.7,
+  "n_samples": 733,
+  "mean_logVDR": 0.007671536357391879,
+  "median_logVDR": 0.00445577373093816,
+  "WeightedAggregateLeakage": -0.0048276233722182645,
+  "num_proxies_reported": 30,
+  "min_proxy_samples": 5,
+  "proxy_weight_mode": "n",
+  "proxyP_num_pairs": 18
+}
