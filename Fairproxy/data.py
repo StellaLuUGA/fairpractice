@@ -11,7 +11,7 @@ import pandas as pd
 
 
 class MovieLensData:
-    def __init__(self, data_path, sample_size=2500, random_seed=42):
+    def __init__(self, data_path, sample_size=5000, random_seed=42):
         self.data_path = Path(data_path)
         self.sample_size = sample_size
         self.random_seed = random_seed

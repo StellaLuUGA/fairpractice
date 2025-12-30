@@ -1,5 +1,11 @@
 # vector_extractor.py
 # Extract v0, v1, v2 from LLaMA (single GPU, matches your v0/v1/v2 definitions)
+#
+# This version extracts the INTERNAL VECTOR of a GENERATED output token
+# (default: last generated token) by:
+#   1) generate() to get output tokens
+#   2) forward(prompt + generated tokens) with a layer hook
+#   3) take hidden state from generated-token positions
 
 """
 Vector definitions (same study as LLaMAGenderPredictor):
@@ -8,7 +14,7 @@ Let:
 - x = non-sensitive input (here: movie_title + genre prompt)
 - a = ground-truth gender from dataset  (row["gender"] / pred["ground_truth"])
 - â = predicted gender from LLaMAGenderPredictor (pred["predicted_gender"])
-- y = downstream output (here: “recommend similar movies”)
+- y = downstream output (here: “recommend movies”)
 
 We extract hidden vectors as a proxy for p'(y | ·):
 
@@ -24,12 +30,27 @@ Then:
 - if â != a:  v1 = v_false  and v2 = v_true
 """
 
+from __future__ import annotations
+
 import torch
 import numpy as np
 
 
 class VectorExtractor:
-    def __init__(self, model, tokenizer, layer_idx: int = -2, device: str = "cuda"):
+    def __init__(
+        self,
+        model,
+        tokenizer,
+        layer_idx: int = -2,
+        device: str = "cuda",
+        # generation controls for getting output tokens (recommendations)
+        max_new_tokens: int = 32,
+        extract_mode: str = "last_gen",  # "last_gen" | "first_gen" | "mean_gen"
+        do_sample: bool = False,
+        temperature: float = 0.0,
+        top_p: float = 0.95,
+        debug_hook: bool = False,
+    ):
         # single GPU/CPU safety
         if device.startswith("cuda") and not torch.cuda.is_available():
             device = "cpu"
@@ -45,10 +66,24 @@ class VectorExtractor:
         if getattr(self.tokenizer, "pad_token", None) is None:
             self.tokenizer.pad_token = self.tokenizer.eos_token
 
+        # generation options
+        self.max_new_tokens = int(max_new_tokens)
+        self.extract_mode = str(extract_mode)
+        self.do_sample = bool(do_sample)
+        self.temperature = float(temperature)
+        self.top_p = float(top_p)
+        self.debug_hook = bool(debug_hook)
+
     # -----------------------------
     # Public API (v0/v1/v2)
     # -----------------------------
-    def extract_all(self, movie_title: str, genre: str, predicted_gender: str, ground_truth_gender: str):
+    def extract_all(
+        self,
+        movie_title: str,
+        genre: str,
+        predicted_gender: str,
+        ground_truth_gender: str,
+    ):
         """
         Returns:
             {
@@ -62,8 +97,8 @@ class VectorExtractor:
               'gender_used_for_v2': 'Male'/'Female'
             }
         """
-        a = self._normalize_gender(ground_truth_gender)     # ground truth
-        ahat = self._normalize_gender(predicted_gender)     # predicted
+        a = self._normalize_gender(ground_truth_gender)  # ground truth
+        ahat = self._normalize_gender(predicted_gender)  # predicted
         if a not in ("Male", "Female") or ahat not in ("Male", "Female"):
             raise ValueError(f"Gender must be 'Male'/'Female'. Got a={a}, ahat={ahat}")
 
@@ -135,12 +170,18 @@ class VectorExtractor:
     @staticmethod
     def _prompt_no_gender(movie_title: str, genre: str) -> str:
         # x only
-        return f'Based on the movie "{movie_title}" in the {genre} genre, recommend movies:'
+        return (
+            f'Based on the movie "{movie_title}" in the {genre} genre, '
+            "recommend 1 movie title only:"
+        )
 
     @staticmethod
     def _prompt_with_gender(movie_title: str, genre: str, gender: str) -> str:
         # x plus gender
-        return f'For a {gender} viewer who watched "{movie_title}" in the {genre} genre, recommend movies:'
+        return (
+            f'For a {gender} viewer who watched "{movie_title}" in the {genre} genre, '
+            "recommend 1 movie title only:"
+        )
 
     @staticmethod
     def _normalize_gender(g: str) -> str:
@@ -172,25 +213,103 @@ class VectorExtractor:
         )
 
     def _extract_hidden_state(self, prompt: str) -> np.ndarray:
+        """
+        Extract an internal vector for the GENERATED recommendation token(s).
+
+        Steps:
+          1) tokenize prompt
+          2) generate continuation tokens (recommendation)
+          3) forward on full sequence with a hook on layer_idx
+          4) take hidden state at generated-token positions
+
+        Returns:
+          np.ndarray of shape [hidden_dim]
+        """
         captured = []
+        printed = {"done": False}
 
         def hook_fn(module, inputs, output):
+            # optional debug print once
+            if self.debug_hook and (not printed["done"]):
+                if isinstance(output, (tuple, list)):
+                    print("hook output is tuple/list, len =", len(output))
+                    try:
+                        print("output[0] shape =", output[0].shape)
+                    except Exception:
+                        print("output[0] has no .shape (unexpected type)")
+                else:
+                    print("hook output is tensor, shape =", output.shape)
+                printed["done"] = True
+
             hs = output[0] if isinstance(output, (tuple, list)) else output
-            captured.append(hs.detach().to(torch.float32).cpu())  # <-- FIX
+            captured.append(hs.detach().to(torch.float32).cpu())  # safe for bf16/fp16
+
+        # 1) tokenize prompt
+        prompt_inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
+        prompt_len = int(prompt_inputs["input_ids"].shape[1])
+
+        # 2) generate output tokens
+        with torch.no_grad():
+            gen_ids = self.model.generate(
+                **prompt_inputs,
+                max_new_tokens=self.max_new_tokens,
+                do_sample=self.do_sample,
+                temperature=self.temperature,
+                top_p=self.top_p,
+                pad_token_id=self.tokenizer.pad_token_id,
+                eos_token_id=self.tokenizer.eos_token_id,
+            )
+
+        seq_len = int(gen_ids.shape[1])
+        if seq_len <= prompt_len:
+            # no new tokens generated; fallback to prompt last token vector
+            full_inputs = {
+                "input_ids": gen_ids,
+                "attention_mask": torch.ones_like(gen_ids),
+            }
+            layers = self._get_layers_container()
+            hook = layers[self.layer_idx].register_forward_hook(hook_fn)
+            try:
+                with torch.no_grad():
+                    _ = self.model(**full_inputs)
+            finally:
+                hook.remove()
+
+            if not captured:
+                raise RuntimeError("No hidden states captured (fallback path).")
+            return captured[0][0, -1, :].numpy()
+
+        # 3) forward full sequence with hook
+        full_inputs = {
+            "input_ids": gen_ids,
+            "attention_mask": torch.ones_like(gen_ids),
+        }
 
         layers = self._get_layers_container()
-        target_layer = layers[self.layer_idx]
-        hook = target_layer.register_forward_hook(hook_fn)
-
+        hook = layers[self.layer_idx].register_forward_hook(hook_fn)
         try:
-            inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
             with torch.no_grad():
-                _ = self.model(**inputs)
+                _ = self.model(**full_inputs)
         finally:
             hook.remove()
 
         if not captured:
             raise RuntimeError("No hidden states captured. Layer path or hook output may not match this model.")
 
-        return captured[0][0, -1, :].numpy()
+        # captured[0]: [1, seq_len, hidden_dim]
+        hs_all = captured[0][0]  # [seq_len, hidden_dim]
+        gen_start = prompt_len
+        gen_end = seq_len  # slicing end
 
+        # 4) choose which generated token vector to return
+        mode = self.extract_mode
+        if mode == "last_gen":
+            vec = hs_all[seq_len - 1, :]
+        elif mode == "first_gen":
+            vec = hs_all[gen_start, :]
+        elif mode == "mean_gen":
+            vec = hs_all[gen_start:gen_end, :].mean(dim=0)
+        else:
+            raise ValueError("extract_mode must be one of: 'last_gen', 'first_gen', 'mean_gen'")
+
+        return vec.numpy()

@@ -3,12 +3,20 @@
   "layer_idx": -2,
   "device": "cuda",
   "confidence_threshold": 0.7,
-  "n_samples": 733,
-  "mean_logVDR": 0.007671536357391879,
-  "median_logVDR": 0.00445577373093816,
-  "WeightedAggregateLeakage": -0.0048276233722182645,
-  "num_proxies_reported": 30,
+  "n_samples": 1403,
+  "mean_logVDR": 0.013585970600901384,
+  "median_logVDR": -0.0012419927153431614,
+  "WeightedAggregateLeakage": 0.0447575414182762,
+  "num_proxies_reported": 99,
   "min_proxy_samples": 5,
   "proxy_weight_mode": "n",
-  "proxyP_num_pairs": 18
+  "OST": {
+    "ran": true,
+    "n_proxies_tested": 99,
+    "leak_thr_abs_mean_logvdr": 0.05,
+    "out_thr_delta_MF_edit": 0.3,
+    "n_both_internal_and_output": 34,
+    "pct_both_internal_and_output": 0.3434343434343434
+  },
+  "proxyP_num_pairs": 77
 }

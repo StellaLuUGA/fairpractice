@@ -34,6 +34,7 @@ class LAFTMetrics:
         self.eps = eps
 
     def vdr(self, v0, v1, v2) -> float:
+        print(v0.shape, v1.shape, v2.shape)
         """VDR(x) = ||v0-v1||_2 / (||v0-v2||_2 + eps)"""
         v0 = np.asarray(v0)
         v1 = np.asarray(v1)

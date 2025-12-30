@@ -1,0 +1,806 @@
+High confidence predictions: 615/800
+Accuracy: 0.712
+[000] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[001] INPUT watched='Strictly Ballroom (1992)' | genre=Comedy
+      v0 (neutral) -> Moulin Rouge! (2001)"
+      v1 (Female) -> Moulin Rouge! (2001)"
+      v2 (Male) -> Shallow Hal" (2001)
+[002] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[003] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[004] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[005] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[006] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[007] INPUT watched='U.S. Marshalls (1998)' | genre=Action
+      v0 (neutral) -> Face/Off (1997)"
+      v1 (Male) -> Face/Off (1997)"
+      v2 (Female) -> Face/Off (1997)"
+[008] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[009] INPUT watched='13th Warrior, The (1999)' | genre=Action
+      v0 (neutral) -> Gladiator (2000)
+      v1 (Male) -> Gladiator (2000)
+      v2 (Female) -> Braveheart (1995)
+[010] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[011] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[012] INPUT watched='Anna and the King (1999)' | genre=Drama
+      v0 (neutral) -> The Remains of the Day (1993)"
+      v1 (Female) -> The Last Emperor" (1987)
+      v2 (Male) -> The Last Emperor" (1987)
+[013] INPUT watched='Hard Rain (1998)' | genre=Action
+      v0 (neutral) -> The Matrix (1999)"
+      v1 (Male) -> The Rock (1996)"
+      v2 (Female) -> The Rock (1996)"
+[014] INPUT watched='Fools Rush In (1997)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> Runaway Bride (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[015] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[016] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[017] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[018] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[019] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[020] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[021] INPUT watched='13th Warrior, The (1999)' | genre=Action
+      v0 (neutral) -> Gladiator (2000)
+      v1 (Male) -> Gladiator (2000)
+      v2 (Female) -> Braveheart (1995)
+[022] INPUT watched='Some Folks Call It a Sling Blade (1993)' | genre=Drama
+      v0 (neutral) -> The Straight Story (1999)"
+      v1 (Male) -> The Straight Story (1999)"
+      v2 (Female) -> The Piano" (1993)
+[023] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[024] INPUT watched='French Kiss (1995)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> My Best Friend's Wedding (1997)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[025] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[026] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[027] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[028] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[029] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[030] INPUT watched='13th Warrior, The (1999)' | genre=Action
+      v0 (neutral) -> Gladiator (2000)
+      v1 (Male) -> Gladiator (2000)
+      v2 (Female) -> Braveheart (1995)
+[031] INPUT watched='French Kiss (1995)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> My Best Friend's Wedding (1997)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[032] INPUT watched='GoldenEye (1995)' | genre=Action
+      v0 (neutral) -> The Bourne Identity (2002)"
+      v1 (Male) -> Die Hard (1988)
+      v2 (Female) -> The Long Kiss Goodnight (1996)"
+[033] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[034] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[035] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[036] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[037] INPUT watched='GoldenEye (1995)' | genre=Action
+      v0 (neutral) -> The Bourne Identity (2002)"
+      v1 (Male) -> Die Hard (1988)
+      v2 (Female) -> The Long Kiss Goodnight (1996)"
+[038] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[039] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[040] INPUT watched='French Kiss (1995)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> My Best Friend's Wedding (1997)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[041] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[042] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[043] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[044] INPUT watched='U.S. Marshalls (1998)' | genre=Action
+      v0 (neutral) -> Face/Off (1997)"
+      v1 (Male) -> Face/Off (1997)"
+      v2 (Female) -> Face/Off (1997)"
+[045] INPUT watched='GoldenEye (1995)' | genre=Action
+      v0 (neutral) -> The Bourne Identity (2002)"
+      v1 (Male) -> Die Hard (1988)
+      v2 (Female) -> The Long Kiss Goodnight (1996)"
+[046] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[047] INPUT watched='Fools Rush In (1997)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> Runaway Bride (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[048] INPUT watched='Strictly Ballroom (1992)' | genre=Comedy
+      v0 (neutral) -> Moulin Rouge! (2001)"
+      v1 (Female) -> Moulin Rouge! (2001)"
+      v2 (Male) -> Shallow Hal" (2001)
+[049] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[050] INPUT watched='U.S. Marshalls (1998)' | genre=Action
+      v0 (neutral) -> Face/Off (1997)"
+      v1 (Male) -> Face/Off (1997)"
+      v2 (Female) -> Face/Off (1997)"
+[051] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[052] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[053] INPUT watched='French Kiss (1995)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> My Best Friend's Wedding (1997)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[054] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[055] INPUT watched='Anna and the King (1999)' | genre=Drama
+      v0 (neutral) -> The Remains of the Day (1993)"
+      v1 (Female) -> The Last Emperor" (1987)
+      v2 (Male) -> The Last Emperor" (1987)
+[056] INPUT watched='Simple Plan, A (1998)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> The Usual Suspects (1995)
+      v2 (Female) -> The Piano Teacher (2001)"
+[057] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[058] INPUT watched='Believers, The (1987)' | genre=Horror
+      v0 (neutral) -> Hellraiser (1987)"
+      v1 (Male) -> The Exorcist (1973)
+      v2 (Female) -> The Others (2001)"
+[059] INPUT watched='13th Warrior, The (1999)' | genre=Action
+      v0 (neutral) -> Gladiator (2000)
+      v1 (Male) -> Gladiator (2000)
+      v2 (Female) -> Braveheart (1995)
+[060] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[061] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[062] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[063] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[064] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[065] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[066] INPUT watched='Anna and the King (1999)' | genre=Drama
+      v0 (neutral) -> The Remains of the Day (1993)"
+      v1 (Female) -> The Last Emperor" (1987)
+      v2 (Male) -> The Last Emperor" (1987)
+[067] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[068] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[069] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[070] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[071] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[072] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[073] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[074] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[075] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[076] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[077] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[078] INPUT watched='13th Warrior, The (1999)' | genre=Action
+      v0 (neutral) -> Gladiator (2000)
+      v1 (Male) -> Gladiator (2000)
+      v2 (Female) -> Braveheart (1995)
+[079] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[080] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[081] INPUT watched='Fools Rush In (1997)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> Runaway Bride (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[082] INPUT watched='French Kiss (1995)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> My Best Friend's Wedding (1997)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[083] INPUT watched='Hard Rain (1998)' | genre=Action
+      v0 (neutral) -> The Matrix (1999)"
+      v1 (Male) -> The Rock (1996)"
+      v2 (Female) -> The Rock (1996)"
+[084] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[085] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[086] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[087] INPUT watched='Fools Rush In (1997)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> Runaway Bride (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[088] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[089] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[090] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[091] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[092] INPUT watched='GoldenEye (1995)' | genre=Action
+      v0 (neutral) -> The Bourne Identity (2002)"
+      v1 (Male) -> Die Hard (1988)
+      v2 (Female) -> The Long Kiss Goodnight (1996)"
+[093] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[094] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[095] INPUT watched='Virgin Suicides, The (1999)' | genre=Comedy
+      v0 (neutral) -> SubUrbia (1996)"
+      v1 (Female) -> Thirteen (2003)
+      v2 (Male) -> American Pie (1999)
+[096] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[097] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[098] INPUT watched='Down to You (2000)' | genre=Comedy
+      v0 (neutral) -> Never Been Kissed (1999)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> Road Trip (2000)"
+[099] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[100] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[101] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[102] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[103] INPUT watched='Simple Plan, A (1998)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> The Usual Suspects (1995)
+      v2 (Female) -> The Piano Teacher (2001)"
+[104] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[105] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[106] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[107] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[108] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[109] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[110] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[111] INPUT watched='13th Warrior, The (1999)' | genre=Action
+      v0 (neutral) -> Gladiator (2000)
+      v1 (Male) -> Gladiator (2000)
+      v2 (Female) -> Braveheart (1995)
+[112] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[113] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[114] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[115] INPUT watched='Fools Rush In (1997)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> Runaway Bride (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[116] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[117] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[118] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[119] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[120] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[121] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[122] INPUT watched='Hard Rain (1998)' | genre=Action
+      v0 (neutral) -> The Matrix (1999)"
+      v1 (Male) -> The Rock (1996)"
+      v2 (Female) -> The Rock (1996)"
+[123] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[124] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[125] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[126] INPUT watched='GoldenEye (1995)' | genre=Action
+      v0 (neutral) -> The Bourne Identity (2002)"
+      v1 (Male) -> Die Hard (1988)
+      v2 (Female) -> The Long Kiss Goodnight (1996)"
+[127] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[128] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[129] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[130] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[131] INPUT watched='Anna and the King (1999)' | genre=Drama
+      v0 (neutral) -> The Remains of the Day (1993)"
+      v1 (Female) -> The Last Emperor" (1987)
+      v2 (Male) -> The Last Emperor" (1987)
+[132] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[133] INPUT watched='Simple Plan, A (1998)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> The Usual Suspects (1995)
+      v2 (Female) -> The Piano Teacher (2001)"
+[134] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[135] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[136] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[137] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[138] INPUT watched='GoldenEye (1995)' | genre=Action
+      v0 (neutral) -> The Bourne Identity (2002)"
+      v1 (Male) -> Die Hard (1988)
+      v2 (Female) -> The Long Kiss Goodnight (1996)"
+[139] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[140] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[141] INPUT watched='13th Warrior, The (1999)' | genre=Action
+      v0 (neutral) -> Gladiator (2000)
+      v1 (Male) -> Gladiator (2000)
+      v2 (Female) -> Braveheart (1995)
+[142] INPUT watched='Simple Plan, A (1998)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> The Usual Suspects (1995)
+      v2 (Female) -> The Piano Teacher (2001)"
+[143] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[144] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[145] INPUT watched='French Kiss (1995)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> My Best Friend's Wedding (1997)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[146] INPUT watched='U.S. Marshalls (1998)' | genre=Action
+      v0 (neutral) -> Face/Off (1997)"
+      v1 (Male) -> Face/Off (1997)"
+      v2 (Female) -> Face/Off (1997)"
+[147] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[148] INPUT watched='U.S. Marshalls (1998)' | genre=Action
+      v0 (neutral) -> Face/Off (1997)"
+      v1 (Male) -> Face/Off (1997)"
+      v2 (Female) -> Face/Off (1997)"
+[149] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[150] INPUT watched='Strictly Ballroom (1992)' | genre=Comedy
+      v0 (neutral) -> Moulin Rouge! (2001)"
+      v1 (Female) -> Moulin Rouge! (2001)"
+      v2 (Male) -> Shallow Hal" (2001)
+[151] INPUT watched='GoldenEye (1995)' | genre=Action
+      v0 (neutral) -> The Bourne Identity (2002)"
+      v1 (Male) -> Die Hard (1988)
+      v2 (Female) -> The Long Kiss Goodnight (1996)"
+[152] INPUT watched='Anna and the King (1999)' | genre=Drama
+      v0 (neutral) -> The Remains of the Day (1993)"
+      v1 (Female) -> The Last Emperor" (1987)
+      v2 (Male) -> The Last Emperor" (1987)
+[153] INPUT watched='Anna and the King (1999)' | genre=Drama
+      v0 (neutral) -> The Remains of the Day (1993)"
+      v1 (Female) -> The Last Emperor" (1987)
+      v2 (Male) -> The Last Emperor" (1987)
+[154] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[155] INPUT watched='Virgin Suicides, The (1999)' | genre=Comedy
+      v0 (neutral) -> SubUrbia (1996)"
+      v1 (Female) -> Thirteen (2003)
+      v2 (Male) -> American Pie (1999)
+[156] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[157] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[158] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[159] INPUT watched='Anna and the King (1999)' | genre=Drama
+      v0 (neutral) -> The Remains of the Day (1993)"
+      v1 (Female) -> The Last Emperor" (1987)
+      v2 (Male) -> The Last Emperor" (1987)
+[160] INPUT watched='Fools Rush In (1997)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> Runaway Bride (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[161] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[162] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[163] INPUT watched='Fools Rush In (1997)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> Runaway Bride (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[164] INPUT watched='Some Folks Call It a Sling Blade (1993)' | genre=Drama
+      v0 (neutral) -> The Straight Story (1999)"
+      v1 (Male) -> The Straight Story (1999)"
+      v2 (Female) -> The Piano" (1993)
+[165] INPUT watched='Pretty Woman (1990)' | genre=Comedy
+      v0 (neutral) -> My Best Friend's Wedding (1997)"
+      v1 (Female) -> 10 Things I Hate About You (1999)"
+      v2 (Male) -> My Best Friend's Wedding (1997)"
+[166] INPUT watched='U.S. Marshalls (1998)' | genre=Action
+      v0 (neutral) -> Face/Off (1997)"
+      v1 (Male) -> Face/Off (1997)"
+      v2 (Female) -> Face/Off (1997)"
+[167] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[168] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[169] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[170] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[171] INPUT watched='Strictly Ballroom (1992)' | genre=Comedy
+      v0 (neutral) -> Moulin Rouge! (2001)"
+      v1 (Female) -> Moulin Rouge! (2001)"
+      v2 (Male) -> Shallow Hal" (2001)
+[172] INPUT watched='Strictly Ballroom (1992)' | genre=Comedy
+      v0 (neutral) -> Moulin Rouge! (2001)"
+      v1 (Female) -> Moulin Rouge! (2001)"
+      v2 (Male) -> Shallow Hal" (2001)
+[173] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[174] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[175] INPUT watched='Simple Plan, A (1998)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> The Usual Suspects (1995)
+      v2 (Female) -> The Piano Teacher (2001)"
+[176] INPUT watched='13th Warrior, The (1999)' | genre=Action
+      v0 (neutral) -> Gladiator (2000)
+      v1 (Male) -> Gladiator (2000)
+      v2 (Female) -> Braveheart (1995)
+[177] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[178] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[179] INPUT watched='Anna and the King (1999)' | genre=Drama
+      v0 (neutral) -> The Remains of the Day (1993)"
+      v1 (Female) -> The Last Emperor" (1987)
+      v2 (Male) -> The Last Emperor" (1987)
+[180] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[181] INPUT watched='Office Space (1999)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> Dodgeball: A True Underdog Story (2004)
+      v2 (Female) -> 9 to 5 (1980)"
+[182] INPUT watched='Strictly Ballroom (1992)' | genre=Comedy
+      v0 (neutral) -> Moulin Rouge! (2001)"
+      v1 (Female) -> Moulin Rouge! (2001)"
+      v2 (Male) -> Shallow Hal" (2001)
+[183] INPUT watched='From Dusk Till Dawn (1996)' | genre=Action
+      v0 (neutral) -> The Accountant (2016)"
+      v1 (Male) -> The Raid: Redemption (2011)
+      v2 (Female) -> Kill Bill: Vol. 1 (2003)"
+[184] INPUT watched='Simple Plan, A (1998)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> The Usual Suspects (1995)
+      v2 (Female) -> The Piano Teacher (2001)"
+[185] INPUT watched='Some Folks Call It a Sling Blade (1993)' | genre=Drama
+      v0 (neutral) -> The Straight Story (1999)"
+      v1 (Male) -> The Straight Story (1999)"
+      v2 (Female) -> The Piano" (1993)
+[186] INPUT watched='Go (1999)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> Point Break (1991)
+      v2 (Female) -> The Usual Suspects (1995)
+[187] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[188] INPUT watched='U.S. Marshalls (1998)' | genre=Action
+      v0 (neutral) -> Face/Off (1997)"
+      v1 (Male) -> Face/Off (1997)"
+      v2 (Female) -> Face/Off (1997)"
+[189] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[190] INPUT watched='Sound of Music, The (1965)' | genre=Musical
+      v0 (neutral) -> Cabaret (1972)"
+      v1 (Female) -> Mamma Mia! (2008)
+      v2 (Male) -> Singin' in the Rain (1952)
+[191] INPUT watched='U.S. Marshalls (1998)' | genre=Action
+      v0 (neutral) -> Face/Off (1997)"
+      v1 (Male) -> Face/Off (1997)"
+      v2 (Female) -> Face/Off (1997)"
+[192] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[193] INPUT watched='Thomas Crown Affair, The (1999)' | genre=Action
+      v0 (neutral) -> Entrapment (1999)
+      v1 (Male) -> Entrapment (1999)
+      v2 (Female) -> Mr. & Mrs. Smith (2005)
+[194] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+[195] INPUT watched='Virgin Suicides, The (1999)' | genre=Comedy
+      v0 (neutral) -> SubUrbia (1996)"
+      v1 (Female) -> Thirteen (2003)
+      v2 (Male) -> American Pie (1999)
+[196] INPUT watched='Simple Plan, A (1998)' | genre=Crime
+      v0 (neutral) -> The Usual Suspects (1995)"
+      v1 (Male) -> The Usual Suspects (1995)
+      v2 (Female) -> The Piano Teacher (2001)"
+[197] INPUT watched='Grosse Pointe Blank (1997)' | genre=Comedy
+      v0 (neutral) -> The Big Lebowski (1998)
+      v1 (Male) -> True Romance (1993)"
+      v2 (Female) -> Miss Congeniality (2000)"
+[198] INPUT watched='Hunt for Red October, The (1990)' | genre=Action
+      v0 (neutral) -> Die Hard (1988)
+      v1 (Male) -> Under Siege (1992)
+      v2 (Female) -> True Lies (1994)
+[199] INPUT watched='Airplane! (1980)' | genre=Comedy
+      v0 (neutral) -> The Naked Gun: From the Files of Police Squad! (1988)
+      v1 (Male) -> The Naked Gun: From the Files of Police Squad!" (1988)
+      v2 (Female) -> The Naked Gun: From the Files of Police Squad!" (1988)
+
+DONE.
+Saved to: outputs_reco_v0v1v2
+Embeddings shapes: v0=(200, 4096), v1=(200, 4096), v2=(200, 4096)

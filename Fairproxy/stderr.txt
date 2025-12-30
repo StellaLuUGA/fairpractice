@@ -1,5 +1,5 @@
 nohup: ignoring input
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 17.67it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 19.67it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00, 18.42it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 20.19it/s]
 We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
 /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
